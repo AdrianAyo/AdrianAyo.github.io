@@ -1,6 +1,9 @@
 .container {
     font-family: 'Lato', sans-serif;
 }
+body {
+    margin: 0 auto;
+}
 
 /* HEADER BACKGROUND IMAGE */
 
@@ -13,7 +16,7 @@
     display: flex;
 }
 #tlo {
-    display: inline;
+    display: flex;
     margin: 0 auto;
     position: relative;
     right: 5%;
@@ -39,6 +42,7 @@
     border-radius: 50%; 
     overflow: hidden;
     margin: 0 auto;
+    box-shadow: 1px 1px 3px;
 }
 #anna {
     margin: 0 auto;
@@ -71,102 +75,102 @@
     position: relative;
     bottom: 25px;
 }
-
-/* O MNIE SECTION */
-.body {
+/* CONTENT SECTION */
+.content  {
     position: absolute;
     width: 100%;
     height: auto;
     top: 520px;
 }
-.o_mnie {
+.o_mnie, .portfolio, .kontakt {
+    width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     margin: 0 auto;
 }
-.o_mnie_photo {
+.o_mnie_photo, .portfolio_photo, .kontakt_photo {
     width: 258px;
     height: 258px;
     overflow: hidden;
-    margin: 0px 45px 0px 0px;
 }
-#img1 {
+#img1, #img2, #img3 {
     height: 258px;
     position: relative;
     width: auto;
     right: 65px;
 }
-.o_mnie_text {
+.o_mnie_text, .portfolio_text, .kontakt_text{
     text-align: left;
     background-color: rgba(77,77,77,0.05);
     color:rgba(77, 77, 77,0.9);
     width: 550px;
-    border: 3px solid rgb(163, 194, 194);
     padding: 10px;
 }
-.o_mnie_text h2 {
+.o_mnie_text h2, .portfolio_text h2, .kontakt_text h2 {
     margin: 0 auto;
+}
+/* O MNIE SECTION */
+
+.o_mnie_photo {
+    margin: 0px 45px 0px 0px;
+}
+.o_mnie_text {
+    border: 3px solid rgb(163, 194, 194);
 }
 
 /* PORTFOLIO SECTION */
 .portfolio {
-    justify-content: center;
-    align-items: center;
-    display: flex;
     margin: 40px auto 0px;
 }
 .portfolio_photo {
-    width: 258px;
-    height: 258px;
-    overflow: hidden;
     margin: 0px 0px 0px 45px;
 }
-#img2 {
-    height: 258px;
-    position: relative;
-    width: auto;
-    right: 65px;
-}
 .portfolio_text {
-    text-align: left;
-    background-color: rgba(77,77,77,0.05);
-    color:rgba(77, 77, 77,0.9);
-    width: 550px;
     border: 3px solid rgb(179, 230, 255);
-    padding: 10px;
-}
-.portfolio_text h2 {
-    margin: 0 auto;
 }
 
 /* KONTAKT SECTION */
 .kontakt {
-    justify-content: center;
-    align-items: center;
-    display: flex;
     margin: 40px auto 0px;
 }
 .kontakt_photo {
-    width: 258px;
-    height: 258px;
-    overflow: hidden;
     margin: 0px 45px 0px 0px;
 }
-#img3 {
-    height: 258px;
-    position: relative;
-    width: auto;
-    right: 65px;
-}
+
 .kontakt_text {
-    text-align: left;
-    background-color: rgba(77,77,77,0.05);
-    color:rgba(77, 77, 77,0.9);
-    width: 550px;
     border: 3px solid rgb(0, 128, 128);
-    padding: 10px;
 }
-.kontakt_text h2 {
+
+/* STOPKA STRONY */
+
+.social {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    top: 1400px;
+    background-color: lightgrey;
     margin: 0 auto;
+}
+.social_icons {
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+.fab {
+    margin: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 25px;
+}
+.fab:hover {
+    color:turquoise;
+    border: 1px solid turquoise;
 }
