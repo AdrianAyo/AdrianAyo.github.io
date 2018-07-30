@@ -99,6 +99,11 @@ body {
     position: relative;
     width: auto;
     right: 65px;
+    transition: all 0.4s linear;
+}
+#img1:hover, #img2:hover, #img3:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 .o_mnie_text, .portfolio_text, .kontakt_text{
     text-align: left;
@@ -125,6 +130,7 @@ body {
 }
 .portfolio_photo {
     margin: 0px 0px 0px 45px;
+
 }
 .portfolio_text {
     border: 3px solid rgb(179, 230, 255);
